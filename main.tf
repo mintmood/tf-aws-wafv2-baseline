@@ -68,4 +68,6 @@ resource "aws_wafv2_web_acl" "this" {
     metric_name                = var.name
     sampled_requests_enabled   = true
   }
+
+  tags = var.tags
 }
